@@ -1,6 +1,6 @@
 # Campo Minado
 
-Demo do jogo: file:///C:/Users/gdcampos/Downloads/qxd0020-prova01-master/questao03/index.html
+**Demo do jogo:** https://gustavodamasceno.github.io/Campo-minado/ 
 
 Nessa questão você vai trabalhar no código do jogo Campo Minando totalmente escrito em HTML, CSS e JS.
 O seu objetivo é implementar duas funcionalidades.

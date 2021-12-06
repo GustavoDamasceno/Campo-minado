@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+
+        <title>QXD0020 - Campo Minando</title>
+        <meta name="description" content="Atividade práticade DOJO - Campo Minado">
+        <meta name="author" content="Bruno Góis Mateus">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/campo.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="card text-center mb-5 mt-5" style="width: 18rem;">
+                        <div class="card-header">
+                            Cronometro <i class="bi bi-alarm"></i>
+                        </div>
+                        <div class="card-body">
+                            <p id="cronometro">00:00:00</p>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+
+
+                                <input type="radio" class="btn-check" name="btnradio" id="play" autocomplete="off" >
+                                <label class="btn btn-outline-secondary" for="play"><i class="bi bi-play-circle"></i></label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="pause" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="pause"><i class="bi bi-pause-circle"></i></label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="stop" autocomplete="off">
+                                <label class="btn btn-outline-secondary" for="stop"><i class="bi bi-stop-circle"></i></label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card text-center mb-5" style="width: 18rem;">
+                        <div class="card-header">
+                            Bandeiras
+                        </div>
+                        <div class="card-body">
+                            <img src="img/flag.png" alt="numero bandeiras"/><span id="n_band"></span><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            Créditos
+                        </div>
+                        <div class="card-body">
+                            <img src="img/explosion.png"> Icon made by <a href="http://www.flaticon.com/authors/freepik" target="_blank">FreePik</a><br>
+                            <img src="img/flag.png"> Icon made by <a href="http://www.flaticon.com/authors/madebyoliver" target="_blank">MadebyOliver</a><br>
+                            <img src="img/bomb.png"> Icon made by <a href="http://www.flaticon.com/authors/baianat" target="_blank">Baianat</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="game_over" class="invisible">
+            <p> <img id="icon" src="img/explosion.png" alt="explosao" class="invisible"> <br><span id="mensagem"></span></p>
+            <button id="new_game" class="invisible btn btn-light text-dark">Jogar novamente</button>
+        </div>
+
+        <div id="campo_pausado" class="d-flex align-items-center justify-content-center invisible">
+            Jogo Pausado
+        </div>
+
+        <div id="campo_minado">
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/campo.js"></script>
+    </body>
+</html>
